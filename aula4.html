@@ -1,0 +1,121 @@
+<canvas width="600" height="400"></canvas>
+
+<!-- 1 quadrado verde
+ <script>
+
+    function desenhaQuadradoVerde() {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = 'green';
+        pincel.fillRect(0, 0, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(0, 0, 50, 50);
+
+}
+
+desenhaQuadradoVerde();
+desenhaQuadradoVerde();
+desenhaQuadradoVerde();
+
+</script> -->
+
+
+<!-- 3 quadrados cores diferentes
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+}
+
+desenhaQuadrado(0, 0, 'blue');
+desenhaQuadrado(0, 50, 'red');
+desenhaQuadrado(0, 100, 'yellow');
+
+</script> -->
+
+<!-- 3 quadrados verdes
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+
+}
+
+desenhaQuadrado(0, 0, 'green');
+desenhaQuadrado(50, 0, 'green');
+desenhaQuadrado(100, 0, 'green');
+
+</script> -->
+
+<!-- 3 linhas quadrados verdes
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    var x = 0;
+
+    while(x < 600) {
+
+    desenhaQuadrado(x, 0, 'green');
+    desenhaQuadrado(x, 50, 'red');
+    desenhaQuadrado(x, 100, 'blue');
+    x = x + 50;
+    }
+
+</script> -->
+
+
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+
+}
+    /*
+    var x = 0;
+
+    while(x < 600) {
+
+        desenhaQuadrado(x, 0, 'green');
+    x = x + 50;
+    }
+   */
+    for(var x = 0; x < 600; x = x + 50) {
+    desenhaQuadrado(x, 0, 'green');
+    }
+
+</script>
